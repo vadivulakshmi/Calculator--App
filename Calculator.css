@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.clear {
+    width: 105px;
+}
+
+.buttons button.equal {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.combined-input {
+    width: calc(100% - 21px);
+    margin-bottom: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+    position: relative;
+}
+
+.history-icon {
+    position: absolute;
+    top: 44%;
+    translate: 10px -99px;
+    margin-left: 1px;
+    cursor: pointer;
+
+}
+
+.history {
+    width: 250px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    grid-gap: 5px;
+}
+
+.history-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    text-align: center;
+}
+
+.history-expression {
+    font-weight: bold;
+}
+
+.history-result {
+    margin-top: 5px;
+}
+.history-expression{
+    color: #4285f4;
+}
+.history-result{
+    color: #4285f4;
+
+}
